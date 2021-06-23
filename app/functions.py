@@ -1,15 +1,16 @@
 import pandas as pd
 import numpy as np
-import sklearn,csv,re
+import sklearn,csv,re,os
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from django.http import HttpResponse
+from myproject.settings import BASE_DIR
 
 def process_file(df):
     #train_x = pd.read_csv("app/static/files/train_x_modified.csv")
     #train_y = pd.read_csv("app/static/files/train_y_modified.csv")
-    train_x = pd.read_csv('BASE_DIR'+/app/static/files/train_x_modified.csv)
-    train_y = pd.read_csv('BASE_DIR'+/app/static/files/train_y_modified.csv)
+    train_x = pd.read_csv(os.path.join(BASE_DIR, 'app/static/files/train_x_modified.csv'))
+    train_y = pd.read_csv(os.path.join(BASE_DIR, 'app/static/files/train_x_modified.csv'))
     test_x = df
     df1 = test_x["お仕事No."]
     
