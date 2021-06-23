@@ -10,7 +10,7 @@ def process_file(df):
     #train_x = pd.read_csv("app/static/files/train_x_modified.csv")
     #train_y = pd.read_csv("app/static/files/train_y_modified.csv")
     train_x = pd.read_csv(os.path.join(BASE_DIR, 'app/static/files/train_x_modified.csv'))
-    train_y = pd.read_csv(os.path.join(BASE_DIR, 'app/static/files/train_x_modified.csv'))
+    train_y = pd.read_csv(os.path.join(BASE_DIR, 'app/static/files/train_y_modified.csv'))
     test_x = df
     df1 = test_x["お仕事No."]
     
